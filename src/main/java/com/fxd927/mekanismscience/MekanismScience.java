@@ -33,6 +33,8 @@ public class MekanismScience
         MSItems.ITEMS.register(modEventBus);
         MSBlocks.BLOCKS.register(modEventBus);
 
+        MSGases.Coolants.init();
+
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
     }
